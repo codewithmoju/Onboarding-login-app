@@ -1,0 +1,55 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="720"><stop stop-color="#FFF8E5"/><stop offset="1" stop-color="#F4C08B"/></linearGradient>
+    <linearGradient id="node" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFF3D7"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FF8A35"/><stop offset="1" stop-color="#D73D07"/></linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#D73D07"/></marker>
+    <filter id="shadow"><feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#6B1C02" flood-opacity="0.22"/></filter>
+  </defs>
+  <rect width="1280" height="720" rx="36" fill="url(#bg)"/>
+  <text x="640" y="78" text-anchor="middle" fill="#1B1B1B" font-family="Arial, sans-serif" font-size="42" font-weight="900">User Journey and Navigation Flow</text>
+  <text x="640" y="116" text-anchor="middle" fill="#65412D" font-family="Arial, sans-serif" font-size="19">AsyncStorage decides whether the user sees onboarding or goes directly to login</text>
+
+  <g filter="url(#shadow)">
+    <g transform="translate(70 230)">
+      <rect width="190" height="130" rx="28" fill="url(#node)" stroke="#D73D07" stroke-opacity="0.22"/>
+      <text x="95" y="58" text-anchor="middle" fill="#1B1B1B" font-size="24" font-weight="900" font-family="Arial, sans-serif">App.js</text>
+      <text x="95" y="90" text-anchor="middle" fill="#73452F" font-size="15" font-family="Arial, sans-serif">StatusBar + Root</text>
+    </g>
+    <g transform="translate(315 230)">
+      <rect width="210" height="130" rx="28" fill="url(#node)" stroke="#D73D07" stroke-opacity="0.22"/>
+      <text x="105" y="52" text-anchor="middle" fill="#1B1B1B" font-size="23" font-weight="900" font-family="Arial, sans-serif">RootNavigator</text>
+      <text x="105" y="84" text-anchor="middle" fill="#73452F" font-size="15" font-family="Arial, sans-serif">NavigationContainer</text>
+    </g>
+    <g transform="translate(580 230)">
+      <rect width="230" height="130" rx="28" fill="url(#accent)"/>
+      <text x="115" y="52" text-anchor="middle" fill="#FFFFFF" font-size="23" font-weight="900" font-family="Arial, sans-serif">StackNavigator</text>
+      <text x="115" y="84" text-anchor="middle" fill="#FFEBD8" font-size="15" font-family="Arial, sans-serif">Checks onboarded key</text>
+    </g>
+    <g transform="translate(865 145)">
+      <rect width="250" height="120" rx="28" fill="url(#node)" stroke="#D73D07" stroke-opacity="0.22"/>
+      <text x="125" y="50" text-anchor="middle" fill="#1B1B1B" font-size="23" font-weight="900" font-family="Arial, sans-serif">Onboarding</text>
+      <text x="125" y="80" text-anchor="middle" fill="#73452F" font-size="15" font-family="Arial, sans-serif">Lottie screens</text>
+    </g>
+    <g transform="translate(865 340)">
+      <rect width="250" height="120" rx="28" fill="url(#node)" stroke="#D73D07" stroke-opacity="0.22"/>
+      <text x="125" y="50" text-anchor="middle" fill="#1B1B1B" font-size="23" font-weight="900" font-family="Arial, sans-serif">Login</text>
+      <text x="125" y="80" text-anchor="middle" fill="#73452F" font-size="15" font-family="Arial, sans-serif">Formik + Yup validation</text>
+    </g>
+  </g>
+
+  <path d="M260 295H315" stroke="#D73D07" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M525 295H580" stroke="#D73D07" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M810 278C850 255 850 220 865 205" stroke="#D73D07" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M810 313C850 330 850 380 865 400" stroke="#D73D07" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <g transform="translate(252 520)">
+    <rect width="776" height="84" rx="28" fill="#FFFFFF" fill-opacity="0.72" stroke="#D73D07" stroke-opacity="0.18"/>
+    <text x="60" y="52" fill="#D73D07" font-size="18" font-weight="900" font-family="Arial, sans-serif">1</text>
+    <text x="95" y="52" fill="#1B1B1B" font-size="18" font-weight="700" font-family="Arial, sans-serif">First launch shows onboarding</text>
+    <text x="360" y="52" fill="#D73D07" font-size="18" font-weight="900" font-family="Arial, sans-serif">2</text>
+    <text x="395" y="52" fill="#1B1B1B" font-size="18" font-weight="700" font-family="Arial, sans-serif">Get Started saves onboarded = 1</text>
+    <text x="675" y="52" fill="#D73D07" font-size="18" font-weight="900" font-family="Arial, sans-serif">3</text>
+    <text x="710" y="52" fill="#1B1B1B" font-size="18" font-weight="700" font-family="Arial, sans-serif">Login opens</text>
+  </g>
+</svg>
